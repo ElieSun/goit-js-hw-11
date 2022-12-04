@@ -20,7 +20,7 @@ refs.loadMore.classList.add('btn-hidden');
 function onSearch(e) {
     e.preventDefault();
     
-    query = e.currentTarget.elements.searchQuery.value;
+    const query = e.currentTarget.elements.searchQuery.value;
     if (imageApi.query !== query) {
         clearGallery();
         imageApi.query = e.currentTarget.elements.searchQuery.value;
